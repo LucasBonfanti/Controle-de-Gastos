@@ -1,0 +1,68 @@
+body{
+    background-color: #95D5B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+input{
+    border: none;
+}
+
+input, button{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: -webkit-fill-available;
+
+}
+
+button{
+    cursor: pointer;
+}
+
+.recuperar{
+    background: transparent;
+    border: none;
+}
+
+.entrar{
+  align-items: center;
+  background-color: #40916C;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  min-height: 40px;
+  min-width: 0px;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.cadastrar{
+    background-color: #52B788 ;
+    border: 2px white;
+    color: white;
+    font-weight: 600;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+form{
+    width: 30vw;
+    height: 55vh;
+}
