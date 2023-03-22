@@ -1,0 +1,20 @@
+button{
+    cursor: pointer;
+}
+
+button:active{
+    opacity: 1;
+}
+
+button[disabled]{
+    opacity: 0.5;
+}
+
+.error{
+    color: red;
+    font-weight: 600;
+    margin-top: -5px;
+    font-size: smaller;
+    display: none;
+}
+

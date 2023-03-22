@@ -6,31 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Controle de Gastos</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="validations.js"></script>
 </head>
 <body>
     
     <body>
+        <div class="logo">
+            <img src="./img/logo-login.png" />
+            <h2 class="logoEscrito">CONTROLE SEUS GASTOS AGORA!</h2>
+
+        </div>
+        
         <form>
             <div>
-                <label>Email</label><br/>
-                <input type="email" name="email" placeholder="seu@email.com"/>
+                <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com"/>
+                <p id="email-required-error" class="error">Email é obrigatório</p>
+                <p id="email-invalid-error" class="error">Email é invalido</p>
             </div>
             <div>
-                <label>Senha</label><br/>
-                <input type="password" name="password" placeholder="senha"/>
+                <input type="password" onchange="onChangePassword()" id="password" name="password" placeholder="senha"/>
+                <p id="password-required-error" class="error">Senha é obrigatória</p>
             </div>
         
             <div>
-                <button type="button" class="entrar">Entrar</button>
+                <button type="button" id="login-button" class="entrar" disabled="true">Entrar</button>
             </div>
             <div>
                 <button type="button" class="cadastrar">Cadastrar</button>
             </div>
             <div>
-                <button type="button" class="recuperar">Recuperar senha</button>
+                <button type="button" id="recover-password-button" class="recuperar" disabled="true">Recuperar senha</button>
             </div>
             
-
         </form>
 
     </body>
